@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Checker 3001</title>
+    <style>
+        body{
+            color: black;
+            background-image: linear-gradient(to right , magenta, blue, darkcyan);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Odd or even Checker 3001</h2>
+    <label>Enter your number :</label>
+    <input type="number" id="number" placeholder="Write your number here">
+    <br/>
+    <input type="button" value="Done" onclick="OorEchecker()">
+    <p id="p1">Output will be here.</p>
+    <script>
+        function OorEchecker() {
+            var check=document.getElementById("number").value;
+            if(check%2==0) {
+                document.getElementById("p1").innerHTML="Your number is "+check+" so it is EVEN"
+            }
+            else{
+                document.getElementById("p1").innerHTML="Your number is "+check+" so it is ODD"
+            }
+        }
+    </script>
+</body>
+</html>
